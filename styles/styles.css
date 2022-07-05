@@ -1,0 +1,432 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 80px;
+
+    position: absolute;
+    width: 1924px;
+    height: 8826px;
+    left: -2px;
+    top: 0px;
+}
+
+section {
+    display: flex;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 220px;
+    gap: 1229px;
+
+    position: absolute;
+    width: 1920px;
+    height: 78px;
+    left: 0px;
+    top: -2px;
+
+    /* Theme/White */
+
+    background: #FFFFFF;
+    /* Object shadow 1 */
+
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+}
+
+.container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    position: absolute;
+    width: 1920px;
+    height: 620px;
+    left: 0px;
+    top: 76px;
+
+    /* Theme/Primary */
+
+    background: url('../assets/Header.png');
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 11.5px;
+
+    width: 197px;
+    height: 36.77px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.deliver-address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    width: 565px;
+    height: 25px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.deliver-to {
+    /* Deliver to: */
+
+    width: 83px;
+    height: 18px;
+
+    /* Button Bold */
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+
+    text-align: center;
+
+    /* Theme/Gray 800 */
+
+    color: #424242;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.flash-deal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 1475.65px;
+    height: 415px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.flash-deal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+    width: 356.91px;
+    height: 415px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    border-width: 2px;
+}
+
+.flash-deal-title {
+    width: 106px;
+    height: 26px;
+
+    /* Headline 6 Bold */
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    /* or 26px */
+
+
+    /* Theme/Gray 800 */
+
+    color: #424242;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.flash-deal-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 16px;
+    gap: 10px;
+
+    /* width: 204px;
+    height: 42px; */
+
+    background: rgba(241, 114, 40, 0.2);
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.flash-deal-tagname {
+    width: 172px;
+    height: 26px;
+
+    /* Headline 6 Bold */
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    /* or 26px */
+
+
+    /* Theme/Warning */
+
+    color: #F17228;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer {
+    width: 1922px;
+    height: 936px;
+
+    /* Theme/Gray 900 */
+
+    background: #212121;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+    gap: 71px;
+
+    width: 1920px;
+    height: 518px;
+
+    background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.popular {
+    width: 1924px;
+    height: 605px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.work-title {
+    width: 330px;
+    height: 48px;
+
+    /* Headline 4 Bold */
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 112%;
+    /* or 48px */
+
+    text-align: center;
+
+    color: #F17228;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.work-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 41px;
+
+    width: 307px;
+    height: 239px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.work-item-logo {
+    width: 86px;
+    height: 112px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.work-item-title {
+    width: 307px;
+    height: 26px;
+
+    /* Headline 6 Bold */
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    /* or 26px */
+
+    text-align: center;
+
+    color: #434343;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.work-item-description {
+    width: 307px;
+    height: 50px;
+
+    /* Body 1 */
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+
+    text-align: center;
+
+    /* Theme/Gray 500 */
+
+    color: #9E9E9E;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.popular-title {
+    width: 266px;
+    height: 48px;
+
+    /* Headline 4 Bold */
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 112%;
+    /* or 48px */
+
+    text-align: center;
+
+    /* Theme/Gray 900 */
+
+    color: #212121;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.slider-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 1504px;
+
+    position: absolute;
+    width: 1724px;
+    height: 76px;
+    left: 99px;
+    top: 256px;
+
+}
