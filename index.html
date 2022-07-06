@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pros">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>FoodWagon</title>
 </head>
 
 <body>
-    <!-- <nav>
+    <header>
         <div class="navbar">
             <div class="row">
                 <div class="top-nav">
@@ -19,17 +24,64 @@
                         <img src="./assets/Logo.png" />
                     </div>
                     <div>
-                        Deliver to:
+                        <span class="deliver-to">
+                            Deliver to:
+                        </span>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="current-location">
+                            Current Location
+                        </span>
+                        <span class="location">
+                            Mohammadpur Bus Stand, Dhaka
+                        </span>
+                    </div>
+                    <div class="menu-list">
+                        <div>
+                            <i class="fas fa-search"></i>
+                            <span>Search Food</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-user"></i>
+                            <span>Login</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </header>
     <section>
-        <div class="header">
-            Header
+        <div class="banner">
+            <div class="banner-item">
+                <span class="banner-title">Are you starving?</span>
+                <span class="banner-subtitle">Within a few clicks, find meals that are accessible near you</span>
+                <div class="search-box">
+                    <div>
+                        <ul class="search-box-top">
+                            <li>
+                                <span>Delivery</span>
+                            </li>
+                            <li>
+                                <span>Pickup</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-box-bottom">
+                        <div class="search-bar">
+                            <div class="search-bar-input">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="text" placeholder="Enter your location" class="search-bar"
+                                    style="border: none;" />
+                            </div>
+                            <div class="btn-primary">
+                                <i class="fa fa-search"></i>
+                                <div class="btn-name">Find Food</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section> -->
+    </section>
     <section>
         <div>
             <div class="flash-deal">
@@ -66,40 +118,39 @@
     </section>
     <section>
         <div class="work">
-            <div>
-                <span class="work-title">How does it work</span>
-            </div>
-            <div>
-                <div class="flash-deal">
-                    <div class="flash-deal-card">
-                        <img src="./assets/Map Marker.png" />
-                        <span class="work-item-title">Select location</span>
 
-                        <span class="work-item-description">
-                            Choose the location where your food will be delivered.
-                        </span>
-                    </div>
-                    <div class="flash-deal-card">
-                        <img src="./assets/Menu.png" />
-                        <span class="work-item-title">Choose order</span>
-                        <span class="work-item-description">
-                            Check over hundreds of menus to pick your favorite food
-                        </span>
-                    </div>
-                    <div class="flash-deal-card">
-                        <img src="./assets/Invoice.png" />
-                        <span class="work-item-title">Pay advanced</span>
-                        <span class="work-item-description">
-                            It's quick, safe, and simple. Select several methods of payment
-                        </span>
-                    </div>
-                    <div class="flash-deal-card">
-                        <img src="./assets/Donut.png" />
-                        <span class="work-item-title">Enjoy meals</span>
-                        <span class="work-item-description">
-                            Food is made and delivered directly to your home.
-                        </span>
-                    </div>
+            <span class="work-title">How does it work</span>
+
+
+            <div class="work-list">
+                <div class="work-item">
+                    <img class="work-item-logo" src="./assets/Map Marker.png" />
+                    <span class="work-item-title">Select location</span>
+
+                    <span class="work-item-description">
+                        Choose the location where your food will be delivered.
+                    </span>
+                </div>
+                <div class="work-item">
+                    <img src="./assets/Menu.png" />
+                    <span class="work-item-title">Choose order</span>
+                    <span class="work-item-description">
+                        Check over hundreds of menus to pick your favorite food
+                    </span>
+                </div>
+                <div class="work-item">
+                    <img src="./assets/Invoice.png" />
+                    <span class="work-item-title">Pay advanced</span>
+                    <span class="work-item-description">
+                        It's quick, safe, and simple. Select several methods of payment
+                    </span>
+                </div>
+                <div class="work-item">
+                    <img src="./assets/Donut.png" />
+                    <span class="work-item-title">Enjoy meals</span>
+                    <span class="work-item-description">
+                        Food is made and delivered directly to your home.
+                    </span>
                 </div>
             </div>
         </div>
@@ -107,44 +158,331 @@
     <section>
         <div class="popular">
             <div>
-                <span class="popular-title">Popular items</span>
+                <h4 class="popular-title">Popular items</h4>
             </div>
-            <div class="slider-btn" >
+            <div class="slider-btn">
                 <img src="./assets/Arrow Left.png" />
                 <img src="./assets/Arrow Right.png" />
             </div>
             <div>
-                <div class="flash-deal">
-                    <div class="flash-deal-card">
-                        <img src="./assets/Food Photo.png" />
-                        <span class="flash-deal-title">Greys Vale</span>
-                        <div class="flash-deal-tag">
-                            <span class="flash-deal-tagname">6 Days Remaining</span>
+                <div class="popular-row">
+                    <!-- <div class="popular-item">
+                        <img src="./assets/Arrow Left.png" />
+                    </div> -->
+                    <div class="popular-item">
+                        <img src="./assets/Frame 40.png" />
+                        <span class="popular-item-title">Greys Vale</span>
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="popular-item-tagname">Burger Area</span>
+                        </div>
+                        <span class="popular-item-title">$3.88</span>
+                    </div>
+                    <div class="popular-item">
+                        <img src="./assets/Frame 40 (1).png" />
+                        <span class="popular-item-title">Greys Vale</span>
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="popular-item-tagname">Burger Area</span>
+                        </div>
+                        <span class="popular-item-title">$3.88</span>
+                    </div>
+                    <div class="popular-item">
+                        <img src="./assets/Frame 40 (2).png" />
+                        <span class="popular-item-title">Greys Vale</span>
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="popular-item-tagname">Burger Area</span>
+                        </div>
+                        <span class="popular-item-title">$3.88</span>
+                    </div>
+                    <div class="popular-item">
+                        <img src="./assets/Frame 40 (3).png" />
+                        <span class="popular-item-title">Greys Vale</span>
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="popular-item-tagname">Burger Area</span>
+                        </div>
+                        <span class="popular-item-title">$3.88</span>
+                    </div>
+                    <div class="popular-item">
+                        <img src="./assets/Frame 40 (4).png" />
+                        <span class="popular-item-title">Greys Vale</span>
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="popular-item-tagname">Burger Area</span>
+                        </div>
+                        <span class="popular-item-title">$3.88</span>
+                    </div>
+                    <!-- <div class="popular-item">
+                        <img src="./assets/Arrow Right.png" />
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="restaurant">
+        <h4 class="restaurant-title">Featured Restaurant</h4>
+        <div class="restaurant-menu">
+            <div class="restaurant-row">
+                <div class="restaurant-item">
+                    <img class="restaurant-image" src="./assets/Image.png" />
+
+                    <!-- <div class="restaurant-badge">
+                        <div class="restaurant-badge-discount"></div>
+                        <div class="restaurant-badge-faster"></div>
+                    </div> -->
+                    <div class="restaurant-details">
+                        <div class="restaurant-header">
+                            <img src="./assets/Image (8).png" />
+                            <div class="restaurant-info">
+                                <h6 class="restaurant-name">Foodworld</h6>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <span class="restaurant-rating">46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurant-tag">
+                            <span class="restaurant-tagname">Open tomorrow</span>
                         </div>
                     </div>
-                    <div class="flash-deal-card">
-                        <img src="./assets/Food Photo (1).png" />
-                        <span class="flash-deal-title">Greys Vale</span>
-                        <div class="flash-deal-tag">
-                            <span class="flash-deal-tagname">7 Days Remaining</span>
+                </div>
+                <div class="restaurant-item">
+                    <img class="restaurant-image" src="./assets/Image (1).png" />
+
+                    <!-- <div class="restaurant-badge">
+                        <div class="restaurant-badge-discount"></div>
+                        <div class="restaurant-badge-faster"></div>
+                    </div> -->
+                    <div class="restaurant-details">
+                        <div class="restaurant-header">
+                            <img src="./assets/Image (9).png" />
+                            <div class="restaurant-info">
+                                <h6 class="restaurant-name">Foodworld</h6>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <span class="restaurant-rating">46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurant-tag">
+                            <span class="restaurant-tagname">Open tomorrow</span>
                         </div>
                     </div>
-                    <div class="flash-deal-card">
-                        <img src="./assets/Food Photo (2).png" />
-                        <span class="flash-deal-title">Greys Vale</span>
-                        <div class="flash-deal-tag">
-                            <span class="flash-deal-tagname">7 Days Remaining</span>
+                </div>
+                <div class="restaurant-item">
+                    <img class="restaurant-image" src="./assets/Image (2).png" />
+
+                    <!-- <div class="restaurant-badge">
+                        <div class="restaurant-badge-discount"></div>
+                        <div class="restaurant-badge-faster"></div>
+                    </div> -->
+                    <div class="restaurant-details">
+                        <div class="restaurant-header">
+                            <img src="./assets/Image (10).png" />
+                            <div class="restaurant-info">
+                                <h6 class="restaurant-name">Foodworld</h6>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <span class="restaurant-rating">46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurant-tag-available">
+                            <span class="restaurant-tagname-available">Open now</span>
                         </div>
                     </div>
-                    <div class="flash-deal-card">
-                        <img src="./assets/Food Photo (3).png" />
-                        <span class="flash-deal-title">Greys Vale</span>
-                        <div class="flash-deal-tag">
-                            <span class="flash-deal-tagname">7 Days Remaining</span>
+                </div>
+                <div class="restaurant-item">
+                    <img class="restaurant-image" src="./assets/Image (3).png" />
+
+                    <!-- <div class="restaurant-badge">
+                        <div class="restaurant-badge-discount"></div>
+                        <div class="restaurant-badge-faster"></div>
+                    </div> -->
+                    <div class="restaurant-details">
+                        <div class="restaurant-header">
+                            <img src="./assets/Image (11).png" />
+                            <div class="restaurant-info">
+                                <h6 class="restaurant-name">Foodworld</h6>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <span class="restaurant-rating">46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurant-tag-available">
+                            <span class="restaurant-tagname-available">Open now</span>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="restaurant-row">
+                <div class="restaurant-item">
+                    <img class="restaurant-image" src="./assets/Image (4).png" />
+
+                    <!-- <div class="restaurant-badge">
+                        <div class="restaurant-badge-discount"></div>
+                        <div class="restaurant-badge-faster"></div>
+                    </div> -->
+                    <div class="restaurant-details">
+                        <div class="restaurant-header">
+                            <img src="./assets/Image (12).png" />
+                            <div class="restaurant-info">
+                                <h6 class="restaurant-name">Foodworld</h6>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <span class="restaurant-rating">46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurant-tag-available">
+                            <span class="restaurant-tagname-available">Open now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant-item">
+                    <img class="restaurant-image" src="./assets/Image (5).png" />
+
+                    <!-- <div class="restaurant-badge">
+                        <div class="restaurant-badge-discount"></div>
+                        <div class="restaurant-badge-faster"></div>
+                    </div> -->
+                    <div class="restaurant-details">
+                        <div class="restaurant-header">
+                            <img src="./assets/Image (13).png" />
+                            <div class="restaurant-info">
+                                <h6 class="restaurant-name">Foodworld</h6>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <span class="restaurant-rating">46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurant-tag-available">
+                            <span class="restaurant-tagname-available">Open now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant-item">
+                    <img class="restaurant-image" src="./assets/Image (6).png" />
+
+                    <!-- <div class="restaurant-badge">
+                        <div class="restaurant-badge-discount"></div>
+                        <div class="restaurant-badge-faster"></div>
+                    </div> -->
+                    <div class="restaurant-details">
+                        <div class="restaurant-header">
+                            <img src="./assets/Image (14).png" />
+                            <div class="restaurant-info">
+                                <h6 class="restaurant-name">Foodworld</h6>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <span class="restaurant-rating">46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurant-tag-available">
+                            <span class="restaurant-tagname-available">Open now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant-item">
+                    <img class="restaurant-image" src="./assets/Image (7).png" />
+
+                    <!-- <div class="restaurant-badge">
+                        <div class="restaurant-badge-discount"></div>
+                        <div class="restaurant-badge-faster"></div>
+                    </div> -->
+                    <div class="restaurant-details">
+                        <div class="restaurant-header">
+                            <img src="./assets/Image (15).png" />
+                            <div class="restaurant-info">
+                                <h6 class="restaurant-name">Foodworld</h6>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <span class="restaurant-rating">46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurant-tag-available">
+                            <span class="restaurant-tagname-available">Open now</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn-secondary">
+            <span class="btn-name">View all</span>
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </section>
+    <section class="search-food">
+        <div class="search-food-container">
+            <div class="search-food-header">
+                <div class="search-food-title">Search by food</div>
+            </div>
+            <div class="search-food-list">
+                <div class="search-food-item">
+                    <img class="search-food-image" src="./assets/Image (16).png" />
+                    <span class="search-food-name">Pizza</span>
+                </div>
+                <div class="search-food-item">
+                    <img class="search-food-image" src="./assets/Image (17).png" />
+                    <span class="search-food-name">Pizza</span>
+                </div>
+                <div class="search-food-item">
+                    <img class="search-food-image" src="./assets/Image (18).png" />
+                    <span class="search-food-name">Pizza</span>
+                </div>
+                <div class="search-food-item">
+                    <img class="search-food-image" src="./assets/Image (19).png" />
+                    <span class="search-food-name">Pizza</span>
+                </div>
+                <div class="search-food-item">
+                    <img class="search-food-image" src="./assets/Image (22).png" />
+                    <span class="search-food-name">Pizza</span>
+                </div>
+                <div class="search-food-item">
+                    <img class="search-food-image" src="./assets/Image (23).png" />
+                    <span class="search-food-name">Pizza</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature">
+        <div class="feature-box">
+            <div class="feature-item">
+                <img class="feature-logo" src="./assets/Icon.png" />
+                <span class="feature-name">Daily Discount</span>
+            </div>
+            <hr />
+            <div class="feature-item">
+                <img class="feature-logo" src="./assets/Icon (1).png" />
+                <span class="feature-name">Live Tracing</span>
+            </div>
+            <hr />
+            <div class="feature-item">
+                <img class="feature-logo" src="./assets/Icon (2).png" />
+                <span class="feature-name">Quick Delivery</span>
+            </div>
+        </div>
+    </section>
+    <section class="app-download-background">
+        <div class="app-download">
+
+        </div>
+    </section>
+    <section class="footer-banner">
+        <div class="footer-banner-container">
+            <div class="footer-banner-title">
+                Are you ready to order with the best deals?
+            </div>
+            <button class="btn-primary">
+                <span class="btn-name">PROCEED TO ORDER</span>
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
     </section>
     <footer>
