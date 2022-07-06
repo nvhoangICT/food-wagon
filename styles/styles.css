@@ -4,7 +4,6 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    gap: 80px;
 
     position: absolute;
     width: 1924px;
@@ -176,6 +175,7 @@ body {
 
     width: 808px;
     height: 60px;
+    background: #F5F5F5;
 }
 
 .search-bar-input {
@@ -384,16 +384,16 @@ body {
     flex-grow: 0;
 }
 
+
 .flash-deal {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
+    padding: 80px 0px 80px;
     gap: 16px;
 
     width: 1475.65px;
     height: 415px;
-
 
     /* Inside auto layout */
 
@@ -485,21 +485,6 @@ body {
 
     color: #F17228;
 
-}
-
-.footer {
-    width: 1922px;
-    height: 936px;
-
-    /* Theme/Gray 900 */
-
-    background: #212121;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .work {
@@ -612,9 +597,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding-top: 80px;
     gap: 88px;
-
 }
 
 
@@ -724,7 +708,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 80px;
     gap: 88px;
 
     width: 1476px;
@@ -1026,7 +1010,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0px;
+    padding-bottom: 80px;
     gap: 16px;
 
     width: 1479px;
@@ -1133,24 +1117,184 @@ hr {
 }
 
 .app-download-background {
-    background: #FEEFD0;
+    display: flex;
+    width: 1924px;
+    height: 589px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 524px;
+    background-image: url('../assets/AppDownloadBackground.png');
+    background-repeat: no-repeat;
+    background-size: 1924px 589px;
 }
 
 .app-download {
     width: 1924px;
     height: 589px;
-
     background: linear-gradient(261.24deg, #FFAE00 63.85%, #FF8A00 111.94%);
+}
+
+.app-download-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+}
+
+.app-download-title {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 106%;
+    /* identical to box height, or 72px */
+
+
+    /* yellow button */
+
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.food-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 1480px;
+    height: 1966px;
+    background-color: #FFFFFF;
+}
+
+.food-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 1480px;
+    height: 1966px;
+    background-color: #FFFFFF;
+}
+
+.food-details-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+
+    width: 1480px;
+    height: 512px;
+
+    /* Shadow 2 */
+
+    filter: drop-shadow(0px 14px 15px rgba(124, 124, 124, 0.06)) drop-shadow(0px 27px 82px rgba(124, 124, 124, 0.28));
+    border-radius: 16px;
+}
+
+.food-details-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+
+    width: 519px;
+    height: 512px;
+
+    /* Theme/White */
+
+    background: #FFFFFF;
+}
+
+.food-details-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px;
+}
+
+.food-details-title {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 112%;
+    padding: 63.5px 0 19.5px;
+    /* or 48px */
+
+
+    color: #353535;
+}
+
+.food-details-subtitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    padding-bottom: 63.5px;
+    /* or 25px */
+
+    color: rgba(97, 97, 97, 0.69);
+}
+
+.btn-food-order {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 48px;
+    gap: 10px;
+
+    width: 407px;
+    height: 60px;
+
+    /* yellow button */
+
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    /* Button shadow ! */
+
+    box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+    border-radius: 8px;
+    border: 0px;
+}
+
+.btn-food-order-name {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.food-details-image {
+    width: 961px;
+    height: 512px;
+
+    border-radius: 0px;
 }
 
 .footer-banner {
     display: flex;
     /* position: flex; */
-    width: 1920px;
-    height: 400px;
-    background: url('../assets/Image\ \(24\).png');
+    background-image: url('../assets/Image\ \(24\).png');
+    background-repeat: no-repeat;
+    background-size: 1922px 400px;
     mix-blend-mode: normal;
     opacity: 0.9;
+    padding: 80px;
 }
 
 .footer-banner-container {
@@ -1171,6 +1315,302 @@ hr {
     text-align: center;
 
     /* Theme/White */
+
+    color: #FFFFFF;
+}
+
+.footer {
+    width: 1922px;
+    height: 936px;
+
+    /* Theme/Gray 900 */
+
+    background: #212121;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.footer-cities-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    padding: 99px 221px 69px;
+}
+
+.footer-cities-heading {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    /* or 26px */
+
+    color: #FFFFFF;
+}
+
+.footer-cities-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    width: 1480px;
+    height: 154px;
+}
+
+.footer-cities-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 104px;
+    height: 154px;
+}
+
+.footer-cities-menu-list-item {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+
+
+    /* Theme/Gray 100 */
+
+    color: #F5F5F5;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px 221px;
+    gap: 363px;
+
+    width: 1480px;
+    height: 254px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 65px;
+}
+
+.footer-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    width: 167px;
+    height: 186px;
+}
+
+.footer-menu-item-heading {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    /* or 26px */
+
+    color: #FFFFFF;
+}
+
+.footer-menu-item-list-item {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    padding: 8px 0px;
+    /* identical to box height, or 18px */
+
+
+    /* Theme/Gray 100 */
+
+    color: #F5F5F5;
+}
+
+.btn-order {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 25px;
+    gap: 10px;
+
+
+    width: 233px;
+    height: 60px;
+    margin-left: calc(50% - 233px/2 + 1.5px);
+    margin-top: 62px;
+
+    background: linear-gradient(93.41deg, #F17228 -5.63%, #F15E28 100.8%);
+    /* Button shadow ! */
+
+    box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+    border-radius: 8px;
+    border: 0;
+}
+
+.btn-order>.btn-name {
+    width: 163px;
+    height: 18px;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Theme/White */
+
+    color: #FFFFFF;
+}
+
+.follow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 43px;
+
+    width: 483px;
+    height: 254px;
+}
+
+.follow-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    width: 101px;
+    height: 86px;
+}
+
+.follow-box-title {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    /* identical to box height, or 22px */
+
+    color: #F5F5F5;
+    opacity: 0.6;
+}
+
+.follow-box-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 101px;
+    height: 24px;
+
+    opacity: 0.31;
+}
+
+.subcribe-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    width: 483px;
+    height: 125px;
+}
+
+.subcribe-box-title {
+    width: 483px;
+    height: 25px;
+
+    /* Body 1 Bold */
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+
+
+    color: #BBBBBB;
+}
+
+.subcribe-box-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 0px 8px 16px;
+    gap: 10px;
+
+    width: 334px;
+    height: 60px;
+
+    /* Theme/Gray 800 */
+
+    background: #424242;
+    border-radius: 8px;
+}
+
+.btn-subcribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 24px;
+    gap: 10px;
+
+    width: 133px;
+    height: 60px;
+
+    /* yellow button */
+
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    /* Button shadow ! */
+
+    box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+    border-radius: 8px;
+    border: 0px;
+}
+
+.btn-subcribe>.btn-name {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+
+    text-align: center;
 
     color: #FFFFFF;
 }
