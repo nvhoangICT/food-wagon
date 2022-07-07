@@ -1658,3 +1658,19 @@ hr {
 
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 1439px) {
+    
+}
+
+@media screen and (max-width: 1023px) {
+    
+}
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (max-width: 479px) {
+    
+}
