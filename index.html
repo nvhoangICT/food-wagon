@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="top-nav">
                 <div class="logo">
                     <img src="./assets/Logo.png" />
@@ -36,11 +36,11 @@
                 </div>
                 <div class="menu-list">
                     <div class="nav-btn-search">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search icon-gold"></i>
                         <span>Search Food</span>
                     </div>
                     <div class="nav-btn-login">
-                        <i class="fas fa-user"></i>
+                        <i class="fas fa-user icon-gold"></i>
                         <span>Login</span>
                     </div>
                 </div>
@@ -54,14 +54,16 @@
                 <span class="banner-subtitle">Within a few clicks, find meals that are accessible near you</span>
                 <div class="search-box">
                     <div>
-                        <ul class="search-box-top">
-                            <li>
-                                <span>Delivery</span>
-                            </li>
-                            <li>
-                                <span>Pickup</span>
-                            </li>
-                        </ul>
+                        <div class="search-box-top">
+                            <button class="btn-active">
+                                <i class="fas fa-motorcycle icon-orange"></i>
+                                <span class="btn-name-active">Delivery</span>
+                            </button>
+                            <button class="btn-inactive">
+                                <i class="fas fa-shopping-bag icon-dark-gray"></i>
+                                <span class="btn-name-inactive">Pickup</span>
+                            </button>
+                        </div>
                     </div>
                     <div class="search-box-bottom">
                         <div class="search-bar">
@@ -71,7 +73,7 @@
                                     style="border: none; background-color: #F5F5F5; height: 49px;" />
                             </div>
                             <button class="btn-primary">
-                                <i class="fa fa-search"></i>
+                                <i class="fa fa-search icon-white"></i>
                                 <span class="btn-name">Find Food</span>
                             </button>
                         </div>
@@ -155,21 +157,21 @@
             <div>
                 <h4 class="popular-title">Popular items</h4>
             </div>
-            <!-- <div class="slider-btn">
+            <div class="slider-btn">
                 <img src="./assets/Arrow Left.png" />
                 <img src="./assets/Arrow Right.png" />
-            </div> -->
+            </div>
             <div>
                 <div class="popular-row">
-                    <div class="popular-item">
+                    <!-- <div class="popular-item">
                         <img src="./assets/Arrow Left.png" style="margin-bottom: 100px;" />
-                    </div>
+                    </div> -->
                     <div class="popular-item">
                         <img src="./assets/Frame 40.png" />
                         <span class="popular-item-title">Greys Vale</span>
                         <div>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span class="popular-item-tagname">Burger Area</span>
+                            <i class="fas fa-map-marker-alt icon-gold"></i>
+                            <span class="popular-item-tagname">&nbsp;Burger Area</span>
                         </div>
                         <span class="popular-item-title">$3.88</span>
                     </div>
@@ -177,8 +179,8 @@
                         <img src="./assets/Frame 40 (1).png" />
                         <span class="popular-item-title">Greys Vale</span>
                         <div>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span class="popular-item-tagname">Burger Area</span>
+                            <i class="fas fa-map-marker-alt icon-gold"></i>
+                            <span class="popular-item-tagname">&nbsp;Burger Area</span>
                         </div>
                         <span class="popular-item-title">$3.88</span>
                     </div>
@@ -186,8 +188,8 @@
                         <img src="./assets/Frame 40 (2).png" />
                         <span class="popular-item-title">Greys Vale</span>
                         <div>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span class="popular-item-tagname">Burger Area</span>
+                            <i class="fas fa-map-marker-alt icon-gold"></i>
+                            <span class="popular-item-tagname">&nbsp;Burger Area</span>
                         </div>
                         <span class="popular-item-title">$3.88</span>
                     </div>
@@ -195,8 +197,8 @@
                         <img src="./assets/Frame 40 (3).png" />
                         <span class="popular-item-title">Greys Vale</span>
                         <div>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span class="popular-item-tagname">Burger Area</span>
+                            <i class="fas fa-map-marker-alt icon-gold"></i>
+                            <span class="popular-item-tagname">&nbsp;Burger Area</span>
                         </div>
                         <span class="popular-item-title">$3.88</span>
                     </div>
@@ -204,14 +206,14 @@
                         <img src="./assets/Frame 40 (4).png" />
                         <span class="popular-item-title">Greys Vale</span>
                         <div>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span class="popular-item-tagname">Burger Area</span>
+                            <i class="fas fa-map-marker-alt icon-gold"></i>
+                            <span class="popular-item-tagname">&nbsp;Burger Area</span>
                         </div>
                         <span class="popular-item-title">$3.88</span>
                     </div>
-                    <div class="popular-item">
+                    <!-- <div class="popular-item">
                         <img src="./assets/Arrow Right.png" style="margin-bottom: 100px;" />
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -231,9 +233,9 @@
                         <div class="restaurant-header">
                             <img src="./assets/Image (8).png" />
                             <div class="restaurant-info">
-                                <h6 class="restaurant-name">Foodworld</h6>
+                                <h6 class="restaurant-name">&nbsp;Foodworld</h6>
                                 <div>
-                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star icon-gold"></i>
                                     <span class="restaurant-rating">46</span>
                                 </div>
                             </div>
@@ -254,9 +256,9 @@
                         <div class="restaurant-header">
                             <img src="./assets/Image (9).png" />
                             <div class="restaurant-info">
-                                <h6 class="restaurant-name">Foodworld</h6>
+                                <h6 class="restaurant-name">&nbsp;Foodworld</h6>
                                 <div>
-                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star icon-gold"></i>
                                     <span class="restaurant-rating">46</span>
                                 </div>
                             </div>
@@ -277,9 +279,9 @@
                         <div class="restaurant-header">
                             <img src="./assets/Image (10).png" />
                             <div class="restaurant-info">
-                                <h6 class="restaurant-name">Foodworld</h6>
+                                <h6 class="restaurant-name">&nbsp;Foodworld</h6>
                                 <div>
-                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star icon-gold"></i>
                                     <span class="restaurant-rating">46</span>
                                 </div>
                             </div>
@@ -300,9 +302,9 @@
                         <div class="restaurant-header">
                             <img src="./assets/Image (11).png" />
                             <div class="restaurant-info">
-                                <h6 class="restaurant-name">Foodworld</h6>
+                                <h6 class="restaurant-name">&nbsp;Foodworld</h6>
                                 <div>
-                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star icon-gold"></i>
                                     <span class="restaurant-rating">46</span>
                                 </div>
                             </div>
@@ -325,9 +327,9 @@
                         <div class="restaurant-header">
                             <img src="./assets/Image (12).png" />
                             <div class="restaurant-info">
-                                <h6 class="restaurant-name">Foodworld</h6>
+                                <h6 class="restaurant-name">&nbsp;Foodworld</h6>
                                 <div>
-                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star icon-gold"></i>
                                     <span class="restaurant-rating">46</span>
                                 </div>
                             </div>
@@ -348,9 +350,9 @@
                         <div class="restaurant-header">
                             <img src="./assets/Image (13).png" />
                             <div class="restaurant-info">
-                                <h6 class="restaurant-name">Foodworld</h6>
+                                <h6 class="restaurant-name">&nbsp;Foodworld</h6>
                                 <div>
-                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star icon-gold"></i>
                                     <span class="restaurant-rating">46</span>
                                 </div>
                             </div>
@@ -371,9 +373,9 @@
                         <div class="restaurant-header">
                             <img src="./assets/Image (14).png" />
                             <div class="restaurant-info">
-                                <h6 class="restaurant-name">Foodworld</h6>
+                                <h6 class="restaurant-name">&nbsp;Foodworld</h6>
                                 <div>
-                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star icon-gold"></i>
                                     <span class="restaurant-rating">46</span>
                                 </div>
                             </div>
@@ -394,9 +396,9 @@
                         <div class="restaurant-header">
                             <img src="./assets/Image (15).png" />
                             <div class="restaurant-info">
-                                <h6 class="restaurant-name">Foodworld</h6>
+                                <h6 class="restaurant-name">&nbsp;Foodworld</h6>
                                 <div>
-                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star icon-gold"></i>
                                     <span class="restaurant-rating">46</span>
                                 </div>
                             </div>
@@ -410,7 +412,7 @@
         </div>
         <button class="btn-secondary">
             <span class="btn-name">View all</span>
-            <i class="fas fa-chevron-right"></i>
+            <i class="fas fa-chevron-right icon-white"></i>
         </button>
     </section>
     <section class="search-food">
@@ -452,12 +454,12 @@
                 <img class="feature-logo" src="./assets/Icon.png" />
                 <span class="feature-name">Daily Discount</span>
             </div>
-            <hr />
+            
             <div class="feature-item">
                 <img class="feature-logo" src="./assets/Icon (1).png" />
                 <span class="feature-name">Live Tracing</span>
             </div>
-            <hr />
+            
             <div class="feature-item">
                 <img class="feature-logo" src="./assets/Icon (2).png" />
                 <span class="feature-name">Quick Delivery</span>
@@ -492,14 +494,14 @@
                         </span>
                         <button class="btn-food-order">
                             <span class="btn-food-order-name">PROCEED TO ORDER</span>
-                            <i class="fas fa-chevron-right"></i>
+                            <i class="fas fa-chevron-right icon-white"></i>
                         </button>
                     </div>
                 </div>
-                <img src="./assets/Image.jpg" />
+                <img class="food-details-image" src="./assets/Image.jpg" />
             </div>
             <div class="food-details-item">
-                <img src="./assets/Image (1).jpg" />
+                <img class="food-details-image" src="./assets/Image (1).jpg" />
                 <div class="food-details-description">
                     <div class="food-details-description-container">
                         <span class="food-details-title">Best deals Crispy Sandwiches</span>
@@ -508,7 +510,7 @@
                         </span>
                         <button class="btn-food-order">
                             <span class="btn-food-order-name">PROCEED TO ORDER</span>
-                            <i class="fas fa-chevron-right"></i>
+                            <i class="fas fa-chevron-right icon-white"></i>
                         </button>
                     </div>
                 </div>
@@ -522,11 +524,11 @@
                         </span>
                         <button class="btn-food-order">
                             <span class="btn-food-order-name">PROCEED TO ORDER</span>
-                            <i class="fas fa-chevron-right"></i>
+                            <i class="fas fa-chevron-right icon-white"></i>
                         </button>
                     </div>
                 </div>
-                <img src="./assets/Image (2).jpg" />
+                <img class="food-details-image" src="./assets/Image (2).jpg" />
             </div>
         </div>
     </section>
@@ -537,7 +539,7 @@
             </div>
             <button class="btn-order">
                 <span class="btn-name">PROCEED TO ORDER</span>
-                <i class="fas fa-chevron-right"></i>
+                <i class="fas fa-chevron-right icon-white"></i>
             </button>
         </div>
     </section>
@@ -597,7 +599,7 @@
                         </ul>
                     </div>
                     <div class="footer-menu-item">
-                        <span class="footer-menu-item-heading">Company</span>
+                        <span class="footer-menu-item-heading">Contact</span>
                         <ul class="footer-item-menu-list">
                             <li class="footer-menu-item-list-item">About us</li>
                             <li class="footer-menu-item-list-item">Team</li>
@@ -606,7 +608,7 @@
                         </ul>
                     </div>
                     <div class="footer-menu-item">
-                        <span class="footer-menu-item-heading">Company</span>
+                        <span class="footer-menu-item-heading">Legal</span>
                         <ul class="footer-item-menu-list">
                             <li class="footer-menu-item-list-item">About us</li>
                             <li class="footer-menu-item-list-item">Team</li>
@@ -621,19 +623,25 @@
                             FOLLOW US
                         </span>
                         <div class="follow-box-icon">
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-facebook"></i>
-                            <i class="fab fa-twitter"></i>
+                            <a href="#"><i class="icon-gray fab fa-instagram"></i></a>
+                            <a href="#"><i class="icon-gray fab fa-facebook"></i></a>
+                            <a href="#"><i class="icon-gray fab fa-twitter"></i></a>
                         </div>
                     </div>
                     <div class="subcribe-box">
                         <span class="subcribe-box-title">
                             Receive exclusive offers in your mailbox
                         </span>
-                        <input class="subcribe-box-input" type="input" placeholder="Enter your email" />
-                        <button class="btn-subcribe">
-                            <span class="btn-name">Subcribe</span>
-                        </button>
+                        <div class="subcribe-box-container">
+                            <div class="subcribe-box-input">
+                                <i class="icon-light-gray fas fa-envelope"></i>
+                                <input type="text" placeholder="Enter your email" class="subcribe-bar"
+                                    style="border: none; background-color: #424242;" />
+                            </div>
+                            <button class="btn-subcribe">
+                                <span class="btn-name">Subcribe</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
