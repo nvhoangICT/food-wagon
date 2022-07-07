@@ -17,33 +17,31 @@
 
 <body>
     <header>
-        <div class="navbar">
-            <div class="row">
-                <div class="top-nav">
-                    <div class="logo">
-                        <img src="./assets/Logo.png" />
+        <div class="container">
+            <div class="top-nav">
+                <div class="logo">
+                    <img src="./assets/Logo.png" />
+                </div>
+                <div>
+                    <span class="deliver-to">
+                        Deliver to:
+                    </span>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="current-location">
+                        Current Location
+                    </span>
+                    <span class="location">
+                        Mohammadpur Bus Stand, Dhaka
+                    </span>
+                </div>
+                <div class="menu-list">
+                    <div class="nav-btn-search">
+                        <i class="fas fa-search"></i>
+                        <span>Search Food</span>
                     </div>
-                    <div>
-                        <span class="deliver-to">
-                            Deliver to:
-                        </span>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span class="current-location">
-                            Current Location
-                        </span>
-                        <span class="location">
-                            Mohammadpur Bus Stand, Dhaka
-                        </span>
-                    </div>
-                    <div class="menu-list">
-                        <div>
-                            <i class="fas fa-search"></i>
-                            <span>Search Food</span>
-                        </div>
-                        <div>
-                            <i class="fas fa-user"></i>
-                            <span>Login</span>
-                        </div>
+                    <div class="nav-btn-login">
+                        <i class="fas fa-user"></i>
+                        <span>Login</span>
                     </div>
                 </div>
             </div>
@@ -68,14 +66,14 @@
                     <div class="search-box-bottom">
                         <div class="search-bar">
                             <div class="search-bar-input">
-                                <i class="fas fa-map-marker-alt"></i>
+                                <img src="./assets/Icon (3).png" />
                                 <input type="text" placeholder="Enter your location" class="search-bar"
-                                    style="border: none;" />
+                                    style="border: none; background-color: #F5F5F5; height: 49px;" />
                             </div>
-                            <div class="btn-primary">
+                            <button class="btn-primary">
                                 <i class="fa fa-search"></i>
-                                <div class="btn-name">Find Food</div>
-                            </div>
+                                <span class="btn-name">Find Food</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -83,43 +81,42 @@
         </div>
     </section>
     <section class="flash-deal-section">
-        <div class="flash-deal">
-            <div class="flash-deal-card">
-                <img src="./assets/Food Photo.png" />
-                <span class="flash-deal-title">Greys Vale</span>
-                <div class="flash-deal-tag">
-                    <span class="flash-deal-tagname">6 Days Remaining</span>
+        <div class="container">
+            <div class="flash-deal">
+                <div class="flash-deal-card">
+                    <img src="./assets/Food Photo.png" />
+                    <span class="flash-deal-title">Greys Vale</span>
+                    <div class="flash-deal-tag">
+                        <span class="flash-deal-tagname">6 Days Remaining</span>
+                    </div>
                 </div>
-            </div>
-            <div class="flash-deal-card">
-                <img src="./assets/Food Photo (1).png" />
-                <span class="flash-deal-title">Greys Vale</span>
-                <div class="flash-deal-tag">
-                    <span class="flash-deal-tagname">7 Days Remaining</span>
+                <div class="flash-deal-card">
+                    <img src="./assets/Food Photo (1).png" />
+                    <span class="flash-deal-title">Greys Vale</span>
+                    <div class="flash-deal-tag">
+                        <span class="flash-deal-tagname">7 Days Remaining</span>
+                    </div>
                 </div>
-            </div>
-            <div class="flash-deal-card">
-                <img src="./assets/Food Photo (2).png" />
-                <span class="flash-deal-title">Greys Vale</span>
-                <div class="flash-deal-tag">
-                    <span class="flash-deal-tagname">7 Days Remaining</span>
+                <div class="flash-deal-card">
+                    <img src="./assets/Food Photo (2).png" />
+                    <span class="flash-deal-title">Greys Vale</span>
+                    <div class="flash-deal-tag">
+                        <span class="flash-deal-tagname">7 Days Remaining</span>
+                    </div>
                 </div>
-            </div>
-            <div class="flash-deal-card">
-                <img src="./assets/Food Photo (3).png" />
-                <span class="flash-deal-title">Greys Vale</span>
-                <div class="flash-deal-tag">
-                    <span class="flash-deal-tagname">7 Days Remaining</span>
+                <div class="flash-deal-card">
+                    <img src="./assets/Food Photo (3).png" />
+                    <span class="flash-deal-title">Greys Vale</span>
+                    <div class="flash-deal-tag">
+                        <span class="flash-deal-tagname">7 Days Remaining</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section>
         <div class="work">
-
             <span class="work-title">How does it work</span>
-
-
             <div class="work-list">
                 <div class="work-item">
                     <img class="work-item-logo" src="./assets/Map Marker.png" />
@@ -158,15 +155,15 @@
             <div>
                 <h4 class="popular-title">Popular items</h4>
             </div>
-            <div class="slider-btn">
+            <!-- <div class="slider-btn">
                 <img src="./assets/Arrow Left.png" />
                 <img src="./assets/Arrow Right.png" />
-            </div>
+            </div> -->
             <div>
                 <div class="popular-row">
-                    <!-- <div class="popular-item">
-                        <img src="./assets/Arrow Left.png" />
-                    </div> -->
+                    <div class="popular-item">
+                        <img src="./assets/Arrow Left.png" style="margin-bottom: 100px;" />
+                    </div>
                     <div class="popular-item">
                         <img src="./assets/Frame 40.png" />
                         <span class="popular-item-title">Greys Vale</span>
@@ -212,9 +209,9 @@
                         </div>
                         <span class="popular-item-title">$3.88</span>
                     </div>
-                    <!-- <div class="popular-item">
-                        <img src="./assets/Arrow Right.png" />
-                    </div> -->
+                    <div class="popular-item">
+                        <img src="./assets/Arrow Right.png" style="margin-bottom: 100px;" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -470,9 +467,21 @@
     <section class="app-download-background">
         <div class="app-download-container">
             <span class="app-download-title">Install the app</span>
+            <span class="app-download-description">
+                It's never been easier to order food. Look for the finest discounts and you'll be lost in a world of
+                delectable food
+            </span>
+            <div class="app-download-menu">
+                <a class="app-download-menu-btn-gp" href="#">
+                    <img style="margin-left: -40px; margin-top: -20px;" src="./assets/Google Play Download.png" />
+                </a>
+                <a class="app-download-menu-btn-as" href="#">
+                    <img style="margin-left: -40px; margin-top: -20px;" src="./assets/App Store Download Button.png" />
+                </a>
+            </div>
         </div>
     </section>
-    <section class="food-details">
+    <section>
         <div class="food-details-container">
             <div class="food-details-item">
                 <div class="food-details-description">

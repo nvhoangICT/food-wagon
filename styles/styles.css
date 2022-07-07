@@ -16,6 +16,8 @@ body {
     display: flex;
 } */
 
+
+
 .top-nav {
     display: flex;
     flex-direction: row;
@@ -37,6 +39,34 @@ body {
     box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
 }
 
+.nav-btn-search {
+    width: 124px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+
+.nav-btn-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 10px;
+
+    width: 118px;
+
+    background: #FFFFFF;
+    /* Shadow/1 */
+
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+    border-radius: 8px;
+}
+
 .menu-list {
     display: flex;
     flex-direction: row;
@@ -50,12 +80,9 @@ body {
     padding-right: 220px;
 }
 
-.container-fliud {
-    width: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: auto;
-    margin-left: auto;
+.container-fluid {
+    max-width: 1920;
+    margin: 0 auto;
 }
 
 .container {
@@ -174,8 +201,7 @@ body {
     gap: 16px;
 
     width: 808px;
-    height: 60px;
-    background: #F5F5F5;
+    background: #FFF;
 }
 
 .search-bar-input {
@@ -192,7 +218,6 @@ body {
 
     background: #F5F5F5;
     border-radius: 8px;
-
 }
 
 ::placeholder {
@@ -202,7 +227,6 @@ body {
     font-size: 18px;
     line-height: 140%;
     /* or 25px */
-
 
     /* Theme/Gray 500 */
 
@@ -214,9 +238,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 21px;
+    padding: 21px 40px;
     gap: 10px;
-    height: 18px;
+    height: 60px;
     border: 0px;
 
     background: linear-gradient(95.71deg, #FF7A7A -39.64%, #F75900 135.31%);
@@ -391,15 +415,6 @@ body {
     align-items: flex-start;
     padding: 80px 0px 80px;
     gap: 16px;
-
-    width: 1475.65px;
-    height: 415px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .flash-deal-card {
@@ -408,16 +423,6 @@ body {
     align-items: flex-start;
     padding: 0px;
     gap: 32px;
-
-    width: 356.91px;
-    height: 415px;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 
     border-width: 2px;
 }
@@ -439,13 +444,6 @@ body {
     /* Theme/Gray 800 */
 
     color: #424242;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .flash-deal-tag {
@@ -460,12 +458,6 @@ body {
 
     background: rgba(241, 114, 40, 0.2);
     border-radius: 8px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .flash-deal-tagname {
@@ -498,7 +490,6 @@ body {
     width: 1920px;
 
     background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
-
 }
 
 .work-list {
@@ -629,7 +620,7 @@ body {
     padding: 0px;
     gap: 16px;
 
-    width: 1481px;
+    width: 1800px;
     height: 469px;
 }
 
@@ -1138,9 +1129,12 @@ hr {
 .app-download-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 0px;
     gap: 40px;
+
+    padding-left: 800px;
+    padding-top: 118px;
 }
 
 .app-download-title {
@@ -1160,6 +1154,55 @@ hr {
     background-clip: text;
 }
 
+.app-download-description {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+
+
+    color: #827E7E;
+    max-width: 429px;
+}
+
+.app-download-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 390.5px;
+    height: 60px;
+}
+
+.app-download-menu-btn-gp {
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    /* Shadow/1 */
+
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+    border-radius: 5px;
+
+    width: 202.5px;
+    height: 60px;
+}
+
+.app-download-menu-btn-as {
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    /* Shadow/1 */
+
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+    border-radius: 5px;
+
+    width: 180px;
+    height: 60px;
+}
+
+
 .food-details {
     display: flex;
     flex-direction: column;
@@ -1172,6 +1215,7 @@ hr {
 }
 
 .food-details-container {
+    margin-top: -340px;
     display: flex;
     flex-direction: column;
     justify-content: center;
