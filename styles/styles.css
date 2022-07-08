@@ -12,11 +12,16 @@ body {
     top: 0px;
 }
 
-/* section {
-    display: flex;
-} */
+hr.vertical {
+    width: 2px;
+    height: 96px;
 
+    background: #CFCFCF;
+}
 
+#top-nav-toggle {
+    display: none;
+}
 
 .top-nav {
     display: flex;
@@ -38,6 +43,11 @@ body {
     box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
 }
 
+.header-center {
+    width: 30vw;
+    flex-wrap: wrap;
+}
+
 .nav-btn-search {
     width: 180px;
 
@@ -47,6 +57,7 @@ body {
     align-items: center;
     padding: 0px;
     gap: 8px;
+    cursor: pointer;
 }
 
 .nav-btn-login {
@@ -56,6 +67,7 @@ body {
     align-items: center;
     padding: 14px 24px;
     gap: 10px;
+    cursor: pointer;
 
     width: 118px;
 
@@ -104,7 +116,7 @@ body {
     /* Theme/Primary */
 
     background: url('../assets/Header.png');
-    background-size: 100vw;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
 }
 
@@ -126,7 +138,6 @@ body {
     font-size: 88px;
     line-height: 100%;
     /* identical to box height, or 88px */
-
 
     /* Theme/White */
 
@@ -178,6 +189,7 @@ body {
     background: #FFFFFF;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin: 0 0 0.12px 0;
 }
 
 .btn-inactive {
@@ -190,6 +202,7 @@ body {
     height: 38px;
     border: 0px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .btn-name-inactive {
@@ -217,6 +230,7 @@ body {
     background: rgba(241, 114, 40, 0.1);
     border-radius: 8px;
     border: 0px;
+    cursor: pointer;
 }
 
 .btn-name-active {
@@ -297,6 +311,7 @@ body {
     gap: 10px;
     height: 60px;
     border: 0px;
+    cursor: pointer;
 
     background: linear-gradient(95.71deg, #FF7A7A -39.64%, #F75900 135.31%);
     border-radius: 8px;
@@ -334,6 +349,7 @@ body {
     box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
     border-radius: 14px;
     border: 0px;
+    cursor: pointer;
 }
 
 .btn-secondary>.btn-name {
@@ -377,24 +393,13 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 12px;
+    gap: 6px;
 
-    width: 565px;
-    height: 25px;
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    width: 40vw;
+    flex-wrap: wrap;
 }
 
 .deliver-to {
-    /* Deliver to: */
-
-    width: 83px;
-    height: 18px;
-
-    /* Button Bold */
-
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 700;
@@ -407,21 +412,9 @@ body {
     /* Theme/Gray 800 */
 
     color: #424242;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .current-location {
-    width: 141px;
-    height: 25px;
-
-    /* Subtitle 1 */
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -437,11 +430,6 @@ body {
 }
 
 .location {
-    width: 302px;
-    height: 25px;
-
-    /* Body 1 Bold */
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -469,7 +457,7 @@ body {
     flex-direction: row;
     align-items: flex-start;
     padding: 80px 0;
-    gap: 36px;
+    gap: 2vw;
     flex-wrap: wrap;
     justify-content: center;
     width: 76vw;
@@ -537,6 +525,10 @@ body {
 
 }
 
+.flash-deal-img {
+    width: 17vw;
+}
+
 .work {
     display: flex;
     flex-direction: column;
@@ -545,7 +537,7 @@ body {
     padding: 80px 0px;
     gap: 71px;
 
-    width: 2040px;
+    width: 100vw;
 
     background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
 }
@@ -589,7 +581,7 @@ body {
     padding: 0px;
     gap: 41px;
 
-    width: 307px;
+    width: 15vw;
 
 
     /* Inside auto layout */
@@ -597,8 +589,7 @@ body {
 }
 
 .work-item-title {
-    width: 307px;
-    height: 26px;
+    width: 15vw;
 
     /* Headline 6 Bold */
 
@@ -616,8 +607,7 @@ body {
 }
 
 .work-item-description {
-    width: 307px;
-    height: 50px;
+    width: 15vw;
 
     /* Body 1 */
 
@@ -673,16 +663,9 @@ body {
 }
 
 .popular-row {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-
-    width: 76vw;
-
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: "popular-item popular-item popular-item popular-item popular-item";
+    grid-gap: 16px;
 }
 
 .popular-item {
@@ -694,7 +677,6 @@ body {
     gap: 16px;
 
     width: 283.4px;
-    height: 469px;
 }
 
 .popular-item-title {
@@ -715,6 +697,7 @@ body {
 
     color: #424242;
 }
+
 
 .popular-location {
     width: 120px;
@@ -810,15 +793,14 @@ body {
     padding: 0px;
     gap: 24px;
 
-    width: 357px;
-    height: 463px;
+    width: 18vw;
 
     border-radius: 16px;
 }
 
 .restaurant-image {
-    width: 357px;
-    height: 301px;
+    width: 18vw;
+    height: 28vh;
 
     background: #FFFFFF;
     border-radius: 16px;
@@ -981,7 +963,11 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 0px;
-    gap: 1504px;
+    gap: 72vw;
+
+    position: absolute;
+    width: 86vw;
+    top: 2256px;
 
 }
 
@@ -1074,12 +1060,12 @@ body {
     padding: 0px;
     gap: 26px;
 
-    width: 218px;
+    width: 11vw;
 }
 
 .search-food-image {
-    width: 218px;
-    height: 218px;
+    width: 11vw;
+    height: 11vw;
 
     border-radius: 144px;
 }
@@ -1137,9 +1123,10 @@ body {
     padding: 0px;
     gap: 30px;
 
-    width: 318px;
+    width: 16vw;
     border-radius: 27px;
 }
+
 
 .feature-name {
     font-family: 'Source Sans Pro';
@@ -1165,15 +1152,14 @@ body {
 
 .app-download-background {
     display: flex;
-    width: 1924px;
-    height: 589px;
+    width: 110vw;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
-    padding-bottom: 524px;
-    background-image: url('../assets/AppDownloadBackground.png');
+    padding-bottom: 35vw;
+    background-image: url('../assets/App Download.png');
     background-repeat: no-repeat;
-    background-size: 1924px 589px;
+    background-size: 110vw auto;
 }
 
 .app-download {
@@ -1244,6 +1230,7 @@ body {
 
     width: 202.5px;
     height: 60px;
+    cursor: pointer;
 }
 
 .app-download-menu-btn-as {
@@ -1256,6 +1243,7 @@ body {
 
     width: 180px;
     height: 60px;
+    cursor: pointer;
 }
 
 
@@ -1349,6 +1337,7 @@ body {
     align-items: center;
     padding: 21px 48px;
     gap: 10px;
+    cursor: pointer;
 
     max-width: 21.19vw;
     height: 60px;
@@ -1399,7 +1388,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 31vw;
+    padding: 0px 30vw;
 }
 
 .footer-banner-title {
@@ -1453,15 +1442,13 @@ body {
 }
 
 .footer-cities-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
+    display: grid;
+    grid-template-areas: 
+    "footer-cities-menu-list footer-cities-menu-list footer-cities-menu-list footer-cities-menu-list footer-cities-menu-list";
+    grid-gap: 40px;
 
-    width: 1480px;
-    height: 154px;
+    width: 86vw;
+    flex-wrap: wrap;
 }
 
 .footer-cities-menu-list {
@@ -1490,15 +1477,13 @@ body {
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-areas: "footer-menu follow-container";
     padding: 0px 221px;
-    gap: 363px;
+    grid-gap: 16vw;
 
     width: 76vw;
-    height: 254px;
+    flex-wrap: wrap;
 }
 
 .footer-menu {
@@ -1507,7 +1492,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 0px;
-    gap: 65px;
+    gap: 6vw;
 }
 
 .footer-menu-item {
@@ -1554,6 +1539,7 @@ body {
     align-items: center;
     padding: 21px 25px;
     gap: 10px;
+    cursor: pointer;
 
 
     width: 233px;
@@ -1729,6 +1715,7 @@ input:focus {
     align-items: center;
     padding: 21px 24px;
     gap: 10px;
+    cursor: pointer;
 
     width: 180px;
     height: 75px;
@@ -1838,10 +1825,1040 @@ input:focus {
     color: #F5F5F5;
 }
 
-@media screen and (max-width: 1439px) {}
+.toggle-list {
+    display: none;
+}
 
-@media screen and (max-width: 1023px) {}
+@media screen and (max-width: 2030px) {
+    .slider-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 45vw;
 
-@media screen and (max-width: 767px) {}
+        position: absolute;
+        width: 82vw;
+        top: 2400px;
+    }
+
+    .popular-row {
+        display: grid;
+        grid-template-areas:
+            "popular-item popular-item popular-item"
+            "popular-item popular-item popular-item";
+        grid-gap: 16px;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .app-download-background {
+        display: flex;
+        width: 120vw;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding-bottom: 524px;
+        background-image: url('../assets/AppDownloadBackground.png');
+        background-repeat: no-repeat;
+        background-size: 120vw 50vh;
+    }
+    
+    .app-download {
+        width: 1924px;
+        height: 589px;
+        background: linear-gradient(261.24deg, #FFAE00 63.85%, #FF8A00 111.94%);
+    }
+    
+    .app-download-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 40px;
+
+        padding-top: 50px;
+    }
+    .food-details-container {
+        margin-top: -16vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 76vw;
+        background-color: #FFFFFF;
+    }
+
+    .food-details-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+
+        width: 76vw;
+
+        /* Shadow 2 */
+
+        filter: drop-shadow(0px 14px 15px rgba(124, 124, 124, 0.06)) drop-shadow(0px 27px 82px rgba(124, 124, 124, 0.28));
+        border-radius: 16px;
+    }
+
+    .food-details-description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+
+        width: 50vw;
+        height: 30vh;
+
+        /* Theme/White */
+
+        background: #FFFFFF;
+    }
+
+    .food-details-description-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 5vh;
+    }
+
+    .food-details-title {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 112%;
+        padding: 63.5px 0 19.5px;
+        /* or 48px */
+        max-width: 40vw;
+
+        color: #353535;
+    }
+
+    .food-details-subtitle {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        padding-bottom: 63.5px;
+        /* or 25px */
+        max-width: 30vw;
+
+        color: rgba(97, 97, 97, 0.69);
+    }
+
+    .food-details-image {
+        width: 50vw;
+        height: 30vh;
+    
+        border-radius: 0px;
+    }
+
+    .slider-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 45vw;
+
+        position: absolute;
+        width: 86vw;
+        top: 3650px;
+    }
+
+    .popular-row {
+        display: grid;
+        grid-template-areas:
+            "popular-item popular-item"
+            "popular-item popular-item"
+            "popular-item popular-item";
+        grid-gap: 16px;
+    }
+
+    .flash-deal {
+        display: grid;
+        grid-template-areas:
+            "flash-deal-item flash-deal-item"
+            "flash-deal-item flash-deal-item";
+        grid-gap: 2vw;
+    }
+
+    .flash-deal-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+
+        border-width: 2px;
+    }
+
+    .flash-deal-title {
+
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        /* or 26px */
+
+
+        /* Theme/Gray 800 */
+
+        color: #424242;
+    }
+
+    .flash-deal-tag {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 8px 16px;
+        gap: 10px;
+
+        /* width: 204px;
+        height: 42px; */
+
+        background: rgba(241, 114, 40, 0.2);
+        border-radius: 8px;
+    }
+
+    .flash-deal-tagname {
+        /* Headline 6 Bold */
+
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+        /* or 26px */
+
+
+        /* Theme/Warning */
+
+        color: #F17228;
+
+    }
+
+    .flash-deal-img {
+        width: 30vw;
+    }
+
+    .work-list {
+        display: grid;
+        display: grid;
+        grid-template-areas:
+            "work-item work-item"
+            "work-item work-item";
+        grid-gap: 32px;
+
+        width: 68vw;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .work-title {
+        width: 330px;
+        height: 48px;
+
+        /* Headline 4 Bold */
+
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 112%;
+        /* or 48px */
+
+        text-align: center;
+
+        color: #F17228;
+    }
+
+    .work-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 41px;
+
+        width: 30vw;
+
+
+        /* Inside auto layout */
+
+    }
+
+    .work-item-title {
+        width: 30vw;
+
+        /* Headline 6 Bold */
+
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+        /* or 26px */
+
+        text-align: center;
+
+        color: #434343;
+
+    }
+
+    .work-item-description {
+        width: 30vw;
+
+        /* Body 1 */
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        /* or 25px */
+
+        text-align: center;
+
+        /* Theme/Gray 500 */
+
+        color: #9E9E9E;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .banner-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+
+        padding-left: 19vw;
+        padding-top: 132px;
+    }
+
+    .feature-box {
+        display: grid;
+        grid-template-areas:
+            "feature-item feature-item"
+            "feature-item feature-item"
+            "feature-item feature-item"
+            "feature-item feature-item";
+        grid-gap: 32px;
+    }
+
+    .feature-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 30px;
+
+        width: 318px;
+        border-radius: 27px;
+    }
+
+    .search-food-list {
+        display: grid;
+        grid-template-areas:
+            "search-food-item search-food-item"
+            "search-food-item search-food-item"
+            "search-food-item search-food-item";
+        grid-gap: 16px;
+    }
+
+    .search-food-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 26px;
+
+        width: 22vw;
+    }
+
+    .search-food-image {
+        width: 20vw;
+        height: auto;
+
+        border-radius: 144px;
+    }
+
+    .search-food-name {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+        /* or 26px */
+
+        /* Theme/Gray 800 */
+
+        color: #424242;
+    }
+
+    hr.vertical {
+        display: none;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 130px 0px 80px;
+        gap: 124px;
+
+        width: 100vw;
+
+        background: #FEEFD0;
+    }
+
+    .feature-box {
+        display: grid;
+        grid-template-areas:
+            "feature-item""feature-item"
+            "feature-item";
+        grid-gap: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 30px;
+
+        width: 25vw;
+        border-radius: 27px;
+    }
+
+    .restaurant {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px;
+        gap: 88px;
+
+        width: 76vw;
+    }
+
+    .restaurant-title {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 112%;
+        /* or 48px */
+
+        text-align: center;
+
+        /* Theme/Gray 900 */
+
+        color: #212121;
+    }
+
+    .restaurant-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 64px;
+
+        width: 76vw;
+    }
+
+    .restaurant-row {
+        display: grid;
+        grid-template-areas:
+            "restaurant-item restaurant-item"
+            "restaurant-item restaurant-item";
+        grid-gap: 16px;
+
+        width: 76vw;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .restaurant-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+
+        width: 26vw;
+
+        border-radius: 16px;
+    }
+
+    .restaurant-image {
+        width: 26vw;
+        height: auto;
+
+        background: #FFFFFF;
+        border-radius: 16px;
+    }
+
+    .footer-banner-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 16.5vw;
+    }
+
+    .footer-banner-title {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 57px;
+        line-height: 97.5%;
+        /* or 56px */
+
+        text-align: center;
+
+        /* Theme/White */
+
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .toggle-menu {
+        display: none;
+    }
+
+    .toggle-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px auto;
+
+        width: 100vw;
+        height: 78px;
+        left: 0px;
+        top: -2px;
+
+        /* Theme/White */
+
+        background: #FFFFFF;
+        /* Object shadow 1 */
+
+        box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+    }
+
+    .search-bar>.btn-primary>.btn-name {
+        display: none;
+    }
+
+    .deliver-address {
+        display: none;
+    }
+
+    .deliver-address-toggle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 18vw;
+        gap: 6px;
+
+        width: 40vw;
+        flex-wrap: wrap;
+    }
+
+    .nav-btn-search {
+        width: 180px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin-left: -20px;
+        gap: 8px;
+        cursor: pointer;
+    }
+
+    .nav-btn-login {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 24px;
+        gap: 10px;
+        cursor: pointer;
+
+        width: 118px;
+
+        background: #FFFFFF;
+        /* Shadow/1 */
+
+        box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+        border-radius: 8px;
+    }
+
+    #nav-btn-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 16px;
+        gap: 0px;
+        cursor: pointer;
+
+        width: 30px;
+
+        background: #FFFFFF;
+        /* Shadow/1 */
+
+        box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+        border-radius: 8px;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+
+        height: 46px;
+        width: 24vw;
+        padding-right: 14vw;
+    }
+
+    #top-nav-toggle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px auto;
+        padding-right: 18vw;
+        width: 100vw;
+        height: 78px;
+        left: 0px;
+        top: -2px;
+
+        /* Theme/White */
+
+        background: #FFFFFF;
+        /* Object shadow 1 */
+
+        box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 11.5px;
+
+        padding-left: 18vw;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .slider-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 45vw;
+
+        position: absolute;
+        width: 86vw;
+        top: 4800px;
+    }
+    .nav-btn-search-name {
+        display: none;
+    }
+
+    .nav-btn-login-name {
+        display: none;
+    }
+
+    .nav-btn-search {
+        width: 30px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        cursor: pointer;
+    }
+
+    .nav-btn-login {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 24px;
+        gap: 10px;
+        cursor: pointer;
+
+        width: 30px;
+
+        background: #FFFFFF;
+        /* Shadow/1 */
+
+        box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+        border-radius: 8px;
+    }
+
+    #nav-btn-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 16px;
+        gap: 0px;
+        cursor: pointer;
+
+        width: 30px;
+
+        background: #FFFFFF;
+        /* Shadow/1 */
+
+        box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+        border-radius: 8px;
+    }
+
+    .footer-banner-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 10vw;
+    }
+
+    .footer-banner-title {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 57px;
+        line-height: 97.5%;
+        /* or 56px */
+
+        text-align: center;
+
+        /* Theme/White */
+
+        color: #FFFFFF;
+    }
+
+    .work-list {
+        display: grid;
+        grid-template-areas:
+            "work-item""work-item"
+            "work-item""work-item";
+        grid-gap: 32px;
+
+        width: 68vw;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .work-title {
+        width: 330px;
+        height: 48px;
+
+        /* Headline 4 Bold */
+
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 112%;
+        /* or 48px */
+
+        text-align: center;
+
+        color: #F17228;
+    }
+
+    .work-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 41px;
+
+        width: 30vw;
+
+
+        /* Inside auto layout */
+
+    }
+
+    .work-item-title {
+        width: 30vw;
+
+        /* Headline 6 Bold */
+
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+        /* or 26px */
+
+        text-align: center;
+
+        color: #434343;
+
+    }
+
+    .work-item-description {
+        width: 30vw;
+
+        /* Body 1 */
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        /* or 25px */
+
+        text-align: center;
+
+        /* Theme/Gray 500 */
+
+        color: #9E9E9E;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .popular-row {
+        display: grid;
+        grid-template-areas:
+            "popular-item""popular-item"
+            "popular-item""popular-item"
+            "popular-item""popular-item";
+        grid-gap: 16px;
+    }
+
+    .restaurant {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px;
+        gap: 88px;
+
+        width: 76vw;
+    }
+
+    .restaurant-title {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 112%;
+        /* or 48px */
+
+        text-align: center;
+
+        /* Theme/Gray 900 */
+
+        color: #212121;
+    }
+
+    .restaurant-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 64px;
+
+        width: 76vw;
+    }
+
+    .restaurant-row {
+        display: grid;
+        grid-template-areas:
+            "restaurant-item""restaurant-item"
+            "restaurant-item""restaurant-item";
+        grid-gap: 16px;
+
+        width: 76vw;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .restaurant-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+
+        width: 36vw;
+
+        border-radius: 16px;
+    }
+
+    .restaurant-image {
+        width: 36vw;
+        height: auto;
+
+        background: #FFFFFF;
+        border-radius: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slider-btn {
+        display: none;
+    }
+
+    .flash-deal {
+        display: grid;
+        grid-template-areas:
+            "flash-deal-item""flash-deal-item"
+            "flash-deal-item""flash-deal-item";
+        grid-gap: 24px;
+    }
+
+    .flash-deal-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+
+        border-width: 2px;
+    }
+
+    .flash-deal-title {
+
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        /* or 26px */
+
+
+        /* Theme/Gray 800 */
+
+        color: #424242;
+    }
+
+    .flash-deal-tag {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 8px 16px;
+        gap: 10px;
+
+        /* width: 204px;
+        height: 42px; */
+
+        background: rgba(241, 114, 40, 0.2);
+        border-radius: 8px;
+    }
+
+    .flash-deal-tagname {
+        /* Headline 6 Bold */
+
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+        /* or 26px */
+
+
+        /* Theme/Warning */
+
+        color: #F17228;
+
+    }
+
+    .flash-deal-img {
+        width: 50vw;
+    }
+
+    .search-food-list {
+        display: grid;
+        grid-template-areas:
+            "search-food-item""search-food-item"
+            "search-food-item""search-food-item"
+            "search-food-item""search-food-item";
+        grid-gap: 16px;
+    }
+
+    .search-food-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 26px;
+
+        width: 44vw;
+    }
+
+    .search-food-image {
+        width: 40vw;
+        height: auto;
+
+        border-radius: 144px;
+    }
+
+    .search-food-name {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+        /* or 26px */
+
+        /* Theme/Gray 800 */
+
+        color: #424242;
+    }
+}
 
 @media screen and (max-width: 479px) {}

@@ -12,21 +12,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $('#nav-btn-menu').click(function () {
+                $('nav.toggle-menu').slideToggle();
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('button.btn-inactive').click(function () {
+                $('button.btn-active').removeClass('btn-active').addClass('tmp');
+                $('button.btn-inactive').removeClass('btn-inactive').addClass('btn-active');
+                $('button.tmp').removeClass('tmp').addClass('btn-inactive');
+                $('i.icon-orange').removeClass('icon-orange').addClass('tmp');
+                $('i.icon-dark-gray').removeClass('icon-dark-gray').addClass('icon-orange');  
+                $('i.tmp').removeClass('tmp').addClass('icon-dark-gray');              
+                $('span.btn-name-active').removeClass('btn-name-active').addClass('tmp');
+                $('span.btn-name-inactive').removeClass('btn-name-inactive').addClass('btn-name-active');
+                $('span.tmp').removeClass('tmp').addClass('btn-name-inactive');
+            });
+        })
+    </script>
     <title>FoodWagon</title>
 </head>
+
 
 <body>
     <header>
         <div class="container-fluid">
+            <div id="top-nav-toggle">
+                <div class="logo">
+                    <img src="./assets/Logo.png" />
+                </div>
+                <div id="nav-btn-menu">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
             <div class="top-nav">
                 <div class="logo">
                     <img src="./assets/Logo.png" />
                 </div>
-                <div>
+                <div class="deliver-address">
                     <span class="deliver-to">
                         Deliver to:
                     </span>
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt icon-gold"></i>
                     <span class="current-location">
                         Current Location
                     </span>
@@ -46,6 +80,34 @@
                 </div>
             </div>
         </div>
+        <nav class="toggle-menu">
+            <div class="container-fluid">
+                <div class="toggle-list">
+                    <div class="deliver-address-toggle">
+                        <span class="deliver-to">
+                            Deliver to:
+                        </span>
+                        <i class="fas fa-map-marker-alt icon-gold"></i>
+                        <span class="current-location">
+                            Current Location
+                        </span>
+                        <span class="location">
+                            Mohammadpur Bus Stand, Dhaka
+                        </span>
+                    </div>
+                    <div class="menu-list">
+                        <div class="nav-btn-search">
+                            <i class="fas fa-search icon-gold"></i>
+                            <span class="nav-btn-search-name">Search Food</span>
+                        </div>
+                        <div class="nav-btn-login">
+                            <i class="fas fa-user icon-gold"></i>
+                            <span class="nav-btn-login-name">Login</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <section>
         <div class="banner">
@@ -86,28 +148,28 @@
         <div class="container">
             <div class="flash-deal">
                 <div class="flash-deal-card">
-                    <img src="./assets/Food Photo.png" />
+                    <img class="flash-deal-img" src="./assets/Food Photo.png" />
                     <span class="flash-deal-title">Greys Vale</span>
                     <div class="flash-deal-tag">
                         <span class="flash-deal-tagname">6 Days Remaining</span>
                     </div>
                 </div>
                 <div class="flash-deal-card">
-                    <img src="./assets/Food Photo (1).png" />
+                    <img class="flash-deal-img" src="./assets/Food Photo (1).png" />
                     <span class="flash-deal-title">Greys Vale</span>
                     <div class="flash-deal-tag">
                         <span class="flash-deal-tagname">7 Days Remaining</span>
                     </div>
                 </div>
                 <div class="flash-deal-card">
-                    <img src="./assets/Food Photo (2).png" />
+                    <img class="flash-deal-img" src="./assets/Food Photo (2).png" />
                     <span class="flash-deal-title">Greys Vale</span>
                     <div class="flash-deal-tag">
                         <span class="flash-deal-tagname">7 Days Remaining</span>
                     </div>
                 </div>
                 <div class="flash-deal-card">
-                    <img src="./assets/Food Photo (3).png" />
+                    <img class="flash-deal-img" src="./assets/Food Photo (3).png" />
                     <span class="flash-deal-title">Greys Vale</span>
                     <div class="flash-deal-tag">
                         <span class="flash-deal-tagname">7 Days Remaining</span>
@@ -174,6 +236,9 @@
                             <span class="popular-item-tagname">&nbsp;Burger Area</span>
                         </div>
                         <span class="popular-item-title">$3.88</span>
+                        <button class="btn-primary" style="align-self: stretch;">
+                            <span class="btn-name">ORDER NOW</span>
+                        </button>
                     </div>
                     <div class="popular-item">
                         <img src="./assets/Frame 40 (1).png" />
@@ -183,6 +248,9 @@
                             <span class="popular-item-tagname">&nbsp;Burger Area</span>
                         </div>
                         <span class="popular-item-title">$3.88</span>
+                        <button class="btn-primary" style="align-self: stretch;">
+                            <span class="btn-name">ORDER NOW</span>
+                        </button>
                     </div>
                     <div class="popular-item">
                         <img src="./assets/Frame 40 (2).png" />
@@ -192,6 +260,9 @@
                             <span class="popular-item-tagname">&nbsp;Burger Area</span>
                         </div>
                         <span class="popular-item-title">$3.88</span>
+                        <button class="btn-primary" style="align-self: stretch;">
+                            <span class="btn-name">ORDER NOW</span>
+                        </button>
                     </div>
                     <div class="popular-item">
                         <img src="./assets/Frame 40 (3).png" />
@@ -201,6 +272,9 @@
                             <span class="popular-item-tagname">&nbsp;Burger Area</span>
                         </div>
                         <span class="popular-item-title">$3.88</span>
+                        <button class="btn-primary" style="align-self: stretch;">
+                            <span class="btn-name">ORDER NOW</span>
+                        </button>
                     </div>
                     <div class="popular-item">
                         <img src="./assets/Frame 40 (4).png" />
@@ -210,6 +284,9 @@
                             <span class="popular-item-tagname">&nbsp;Burger Area</span>
                         </div>
                         <span class="popular-item-title">$3.88</span>
+                        <button class="btn-primary" style="align-self: stretch;">
+                            <span class="btn-name">ORDER NOW</span>
+                        </button>
                     </div>
                     <!-- <div class="popular-item">
                         <img src="./assets/Arrow Right.png" style="margin-bottom: 100px;" />
@@ -454,12 +531,12 @@
                 <img class="feature-logo" src="./assets/Icon.png" />
                 <span class="feature-name">Daily Discount</span>
             </div>
-            
+            <hr class="vertical" />
             <div class="feature-item">
                 <img class="feature-logo" src="./assets/Icon (1).png" />
                 <span class="feature-name">Live Tracing</span>
             </div>
-            
+            <hr class="vertical" />
             <div class="feature-item">
                 <img class="feature-logo" src="./assets/Icon (2).png" />
                 <span class="feature-name">Quick Delivery</span>
