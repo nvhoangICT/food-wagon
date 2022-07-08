@@ -307,7 +307,7 @@ hr.vertical {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 21px 28px;
+    padding: 21px 2vw;
     gap: 10px;
     height: 60px;
     border: 0px;
@@ -1443,8 +1443,8 @@ hr.vertical {
 
 .footer-cities-menu {
     display: grid;
-    grid-template-areas: 
-    "footer-cities-menu-list footer-cities-menu-list footer-cities-menu-list footer-cities-menu-list footer-cities-menu-list";
+    grid-template-areas:
+        "footer-cities-menu-list footer-cities-menu-list footer-cities-menu-list footer-cities-menu-list footer-cities-menu-list";
     grid-gap: 40px;
 
     width: 86vw;
@@ -1688,7 +1688,7 @@ input:focus {
     padding: 0px;
     gap: 16px;
 
-    width: 483px;
+    width: 22vw;
     height: 50px;
 }
 
@@ -1699,8 +1699,8 @@ input:focus {
     padding: 7px 0px 8px 16px;
     gap: 10px;
 
-    width: 334px;
-    height: 60px;
+    width: 13vw;
+    height: 40px;
 
     /* Theme/Gray 800 */
 
@@ -1830,6 +1830,16 @@ input:focus {
 }
 
 @media screen and (max-width: 2030px) {
+    .footer-container {
+        display: grid;
+        grid-template-areas: "footer-menu follow-container";
+        padding: 0px 221px;
+        grid-gap: 6vw;
+
+        width: 76vw;
+        flex-wrap: wrap;
+    }
+
     .slider-btn {
         display: flex;
         flex-direction: row;
@@ -1853,6 +1863,7 @@ input:focus {
 }
 
 @media screen and (max-width: 1439px) {
+
     .app-download-background {
         display: flex;
         width: 120vw;
@@ -1864,13 +1875,13 @@ input:focus {
         background-repeat: no-repeat;
         background-size: 120vw 50vh;
     }
-    
+
     .app-download {
         width: 1924px;
         height: 589px;
         background: linear-gradient(261.24deg, #FFAE00 63.85%, #FF8A00 111.94%);
     }
-    
+
     .app-download-container {
         display: flex;
         flex-direction: column;
@@ -1880,6 +1891,7 @@ input:focus {
 
         padding-top: 50px;
     }
+
     .food-details-container {
         margin-top: -16vw;
         display: flex;
@@ -1956,7 +1968,7 @@ input:focus {
     .food-details-image {
         width: 50vw;
         height: 30vh;
-    
+
         border-radius: 0px;
     }
 
@@ -2502,6 +2514,7 @@ input:focus {
         width: 86vw;
         top: 4800px;
     }
+
     .nav-btn-search-name {
         display: none;
     }
